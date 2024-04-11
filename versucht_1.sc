@@ -23,9 +23,18 @@ println(Suit)
 val ShuffleDesk = Random.shuffle(Suit)
 println(ShuffleDesk)
 
-val aRange = 1 to 13
-
 val randomCard = ShuffleDesk(Random.nextInt(ShuffleDesk.length))
+
+val PlayerCards = ShuffleDesk.take(13)
+val PlayerCards2 = ShuffleDesk.slice(13,25)
+val PlayerCards3 = ShuffleDesk.slice(26,38)
+val PlayerCards4 = ShuffleDesk.slice(39,52)
+
+println(PlayerCards)
+println(PlayerCards2)
+println(PlayerCards3)
+println(PlayerCards4)
+
 
 
 /**
